@@ -2,12 +2,12 @@
  * @(#)exp1.java
  *
  *
- * @author SÈrgio Roriz
+ * @author S√©rgio Roriz
  * @version 1.00 2020/9/15
  *
- *	O array eventos contÈm dados de contagem.
+ *	O array eventos cont√©m dados de contagem.
  *  Cada contagem foi executada durante um minuto.
- *  Portanto a taxa de cada contagem È NUMERICAMENTE igual ‡ contagem.
+ *  Portanto a taxa de cada contagem √© NUMERICAMENTE igual √† contagem.
  *
  *
  */
@@ -34,14 +34,14 @@ public class exp1 {
     	double soma = 0d;
     	double media = 0d;
     	if (n > evento.length) {
-    		System.out.println("Par‚metro maior que o n˙mero de dados. A mÈdia ser· calculada para todos os " + evento.length + " dados.");
+    		System.out.println("Par√¢metro maior que o n√∫mero de dados. A m√©dia ser√° calculada para todos os " + evento.length + " dados.");
     		n = evento.length;
     	}
     	for (int i = 0; i < n; i++) {
     		soma = soma + evento[i];
     	}
     	media = soma / n;
-    	System.out.println("A mÈdia dos " + n + " primeiros eventos È: " + media);
+    	System.out.println("A m√©dia dos " + n + " primeiros eventos √©: " + media);
     	return media;
     }
     
@@ -54,7 +54,7 @@ public class exp1 {
     		numerador = numerador*numerador;
     		soma = soma + (numerador / media);    		
     	}
-    	System.out.println("O qui quadrado \"81\" È: " + soma);
+    	System.out.println("O qui quadrado \"81\" √©: " + soma);
     }
     
     public static void desvioP(int n) {
@@ -68,7 +68,7 @@ public class exp1 {
     	}
     	double desvio = soma / (n - 1);
     	desvio = Math.sqrt(desvio);
-    	System.out.println("O desvio padr„o dos " + n + " primeiros eventos È: " + desvio);
+    	System.out.println("O desvio padr√£o dos " + n + " primeiros eventos √©: " + desvio);
     }
     
     public static void mediaDesvios(int n) {
@@ -80,7 +80,7 @@ public class exp1 {
     		soma = soma + Math.abs(numerador);
     	}
     	double mediaDesvio = soma / n;
-    	System.out.println("A mÈdia dos desvios dos " + n + " primeiros eventos È: " + mediaDesvio);
+    	System.out.println("A m√©dia dos desvios dos " + n + " primeiros eventos √©: " + mediaDesvio);
     }
     
     public static void contaIntervalos() {
